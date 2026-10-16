@@ -171,3 +171,4 @@ I split them. Files over the threshold are cut into overlapping windows, each
 window is transcribed with its time offset applied, and the windows are stitched
 back together with a running cursor so the final timestamps are ordered and don't
 overlap. Memory stays flat and one bad chunk doesn't take down the whole file.
+
