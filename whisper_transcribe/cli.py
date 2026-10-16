@@ -1,4 +1,4 @@
-"""CLI entry point: python -m whisper_transcribe.cli <file>."""
+"""CLI entry point: python -m whisper_transcribe.cli <file> name."""
 
 import argparse
 import json

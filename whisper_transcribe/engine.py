@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from .audio import load_wav_array
 from .config import Settings
 from .models import Segment
+from faster_whisper import WhisperModel
 
 
 @dataclass
@@ -21,8 +22,6 @@ class WhisperEngine:
 
     def _load(self):
         if self._model is None:
-            from faster_whisper import WhisperModel
-
             self._model = WhisperModel(
                 self.settings.model_size,
                 device=self.settings.device,
